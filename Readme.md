@@ -29,7 +29,7 @@ The project explores **deep learning-based image reconstruction** techniques usi
 - Training, evaluation, and visualization of reconstructed images.  
 
 ---
-## Explination
+## Explaination
 
 **1. pconvnet.ipynb**
 
