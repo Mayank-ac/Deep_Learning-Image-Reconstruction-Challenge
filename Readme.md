@@ -29,7 +29,44 @@ The project explores **deep learning-based image reconstruction** techniques usi
 - Training, evaluation, and visualization of reconstructed images.  
 
 ---
+## Explination
+```
+1. pconvnet.ipynb
 
+Implements a Partial Convolutional Network (PConvNet) for image inpainting.
+
+Uses partial convolutions where only valid (unmasked) pixels contribute to the convolution operation.
+
+Demonstrates training and evaluation on masked images to restore missing regions.
+
+Outputs reconstructed images where holes are filled in with plausible content.
+
+Goal: Show how PConvNet can handle irregular missing regions better than normal convolution.
+
+2. pconvnet-training-augmented.ipynb
+
+Builds on the first notebook but adds data augmentation.
+
+Applies transformations like random cropping, flipping, rotations, or noise injection during training.
+
+Helps the PConvNet generalize better by training on more diverse inputs.
+
+Shows improved reconstruction quality compared to plain training.
+
+Goal: Train a more robust PConvNet model with augmented datasets.
+
+3. pix2pix-model.ipynb
+
+Implements the Pix2Pix model (a Conditional GAN).
+
+Trains a generator + discriminator for image-to-image translation tasks (e.g., converting masked → filled images, or sketches → photos).
+
+Uses a PatchGAN discriminator to enforce local realism in reconstructed patches.
+
+Compares GAN-based inpainting against deterministic models like PConvNet.
+
+Goal: Show how GANs (Pix2Pix) can generate sharper, more realistic textures in inpainting.
+```
 ## 🛠️ Requirements
 
 Create a Python environment and install dependencies:
