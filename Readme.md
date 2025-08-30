@@ -30,43 +30,43 @@ The project explores **deep learning-based image reconstruction** techniques usi
 
 ---
 ## Explination
-```
-1. pconvnet.ipynb
 
-Implements a Partial Convolutional Network (PConvNet) for image inpainting.
+**1. pconvnet.ipynb**
 
-Uses partial convolutions where only valid (unmasked) pixels contribute to the convolution operation.
+   Implements a Partial Convolutional Network (PConvNet) for image inpainting.
 
-Demonstrates training and evaluation on masked images to restore missing regions.
+   Uses partial convolutions where only valid (unmasked) pixels contribute to the convolution operation.
 
-Outputs reconstructed images where holes are filled in with plausible content.
+   Demonstrates training and evaluation on masked images to restore missing regions.
 
-Goal: Show how PConvNet can handle irregular missing regions better than normal convolution.
+   Outputs reconstructed images where holes are filled in with plausible content.
 
-2. pconvnet-training-augmented.ipynb
+   Goal: Show how PConvNet can handle irregular missing regions better than normal convolution.
 
-Builds on the first notebook but adds data augmentation.
+**2. pconvnet-training-augmented.ipynb**
 
-Applies transformations like random cropping, flipping, rotations, or noise injection during training.
+   Builds on the first notebook but adds data augmentation.
 
-Helps the PConvNet generalize better by training on more diverse inputs.
+   Applies transformations like random cropping, flipping, rotations, or noise injection during training.
 
-Shows improved reconstruction quality compared to plain training.
+   Helps the PConvNet generalize better by training on more diverse inputs.
 
-Goal: Train a more robust PConvNet model with augmented datasets.
+   Shows improved reconstruction quality compared to plain training.
 
-3. pix2pix-model.ipynb
+   Goal: Train a more robust PConvNet model with augmented datasets.
 
-Implements the Pix2Pix model (a Conditional GAN).
+**3. pix2pix-model.ipynb**
 
-Trains a generator + discriminator for image-to-image translation tasks (e.g., converting masked → filled images, or sketches → photos).
+   Implements the Pix2Pix model (a Conditional GAN).
 
-Uses a PatchGAN discriminator to enforce local realism in reconstructed patches.
+   Trains a generator + discriminator for image-to-image translation tasks (e.g., converting masked → filled images, or sketches → photos).
 
-Compares GAN-based inpainting against deterministic models like PConvNet.
+   Uses a PatchGAN discriminator to enforce local realism in reconstructed patches.
 
-Goal: Show how GANs (Pix2Pix) can generate sharper, more realistic textures in inpainting.
-```
+   Compares GAN-based inpainting against deterministic models like PConvNet.
+
+   Goal: Show how GANs (Pix2Pix) can generate sharper, more realistic textures in inpainting.
+
 ## 🛠️ Requirements
 
 Create a Python environment and install dependencies:
