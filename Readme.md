@@ -92,6 +92,6 @@ tqdm
 
 ## 👨‍💻 Author
 
-Developed by **[Your Name](https://github.com/yourusername)**  
+Developed by **[Mayank Kumar]([https://github.com/yourusername](https://github.com/Mayank-ac/Deep_Learning-Image-Reconstruction-Challenge))**  
 Feel free to raise issues or contribute 🚀
 
